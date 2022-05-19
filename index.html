@@ -22,7 +22,7 @@
       <div class="py-5 text-center">
         <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
           alt="" width="72" height="57">
-        <h2>Checkout form</h2>
+        <h1>Checkout form</h1>
         <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group
           has a validation state that can be triggered by attempting to submit the form without completing it.</p>
       </div>
@@ -70,7 +70,7 @@
 
           <form class="card p-2">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Promo code">
+              <input type="text" class="form-control" id = "PromoCode"  placeholder="Promo code">
               <button type="submit" class="btn btn-secondary">Redeem</button>
             </div>
           </form>
@@ -78,6 +78,8 @@
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Billing address</h4>
           <form class="needs-validation" novalidate>
+            <fieldset>
+            <legend>Billing address</legend>
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="firstName" class="form-label">First name</label>
@@ -170,9 +172,10 @@
               <input type="checkbox" class="form-check-input" id="save-info">
               <label class="form-check-label" for="save-info">Save this information for next time</label>
             </div>
-
+          </fieldset>
             <hr class="my-4">
 
+            <fieldset>
             <h4 class="mb-3">Payment</h4>
 
             <div class="my-3">
@@ -224,7 +227,7 @@
                 </div>
               </div>
             </div>
-
+            </fieldset>
             <hr class="my-4">
 
             <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
